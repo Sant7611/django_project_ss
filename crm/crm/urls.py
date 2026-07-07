@@ -21,6 +21,6 @@ from products.views import test
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('products.urls')),
-    path('',include('authentication.urls'))
+    path('authentication/', include('authentication.urls'))
 
 ]
